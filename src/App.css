@@ -1,0 +1,141 @@
+/* App Container */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f6f8;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+}
+
+/* Add Vehicle Section */
+.add-vehicle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-vehicle h2 {
+  font-size: 1.25rem;
+}
+
+.add-button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Vehicle List Table */
+.vehicle-list {
+  margin-top: 20px;
+}
+
+.vehicle-list h2 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+td.status.in-transit {
+  background-color: #eaf4fc;
+  color: #007bff;
+  font-weight: bold;
+}
+
+td.status.charging {
+  background-color: #e0ffe0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+td.status.idle {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 6px 10px;
+  margin: 3px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:focus {
+  outline: none;
+}
+
+button + button {
+  margin-left: 5px;
+}
+
+/* Alert Styles */
+.low-battery {
+  background-color: #ffe6e6;
+  color: #dc3545;
+  font-weight: bold;
+}
+/* Input Fields */
+.add-vehicle input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 150px; /* Adjust width as needed */
+}
+
+.add-vehicle input:focus {
+  border-color: #007bff;
+  outline: none;
+}
